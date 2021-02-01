@@ -1,0 +1,211 @@
+body {
+    font-family: sans-serif;
+    background-color: #151F17;
+  }
+  
+  #info{
+      display: none;
+  }
+  #successOrFail{
+    display: none;
+  }
+  .file-upload {
+    background-color: #151F17;
+    width: 600px;
+    margin: 0 auto;
+  }
+  
+  .file-upload-btn {
+    width: 100%;
+    margin: 0;
+  
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .file-upload-btn:hover {
+ 
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+  
+  .file-upload-content {
+    display: none;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+   
+    height: 100vh;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .image-upload-wrap {
+  
+    position: relative;
+    height: 100vh;
+  }
+  
+  
+  .image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+  }
+  
+  .drag-text {
+    text-align: center;
+  }
+  
+  .drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #15824B;
+    padding: 60px 0;
+  }
+  
+  .file-upload-image {
+    max-height: 50%;
+   
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+  .bomb{
+      display: none;
+      background-color: #FCEEEE;
+      margin: 0 auto;
+
+  }
+  #bombImg{
+    width: 80%;
+    margin-left: 100px;
+    
+  }
+  @media(min-width:560px){
+    .bomb{
+      width: 50%;
+    }
+  }
+  #resultBtn{
+      display: none;
+      max-width: 1688px;
+      background-color: transparent;
+      background-repeat:no-repeat;
+      border: none;
+      cursor:pointer;
+      overflow: hidden;
+      outline:none;
+      width:100%; 
+      margin: 0 auto;
+  }
+  
+  .Imgs{
+    /* 이미지 크기 화면에 맞게 하기 */
+    width: 100%;
+    height: 100vh;
+    max-width:100%;
+  
+    object-fit:cover
+}
+
+.file-upload{
+  /* 이미지 크기 화면에 맞게 하기 */
+  max-width:100%
+}
+.result-message{
+  color: white;
+}
+#bigname{
+  color: white;
+}
+#notice{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: '완도희망체';
+    font-size: 1.2rem;
+    position: absolute;
+    top: 90%;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 330%);
+}
+#resultBtnImg{
+  max-width:100%
+}
+.result-box,
+#successOrFail{
+    height: 200px;
+    width: 100vw;
+    margin: 0 auto;
+    left: 5px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.2rem;
+    color: white;
+    transform: translate(-50%, 30%);
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+@media(min-width:560px){
+  .result-box{
+    width: 500px; 
+    font-size: 1.2rem;
+    margin: 0 auto;
+    
+  }
+
+  #notice{
+    font-size: 2rem;
+  }
+  .result-box,
+    #successOrFail{
+        width: 500px;
+    }
+}
